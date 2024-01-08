@@ -63,3 +63,46 @@ git config --global user.email "Seu Email"
 
 # Isso define suas informações de commit, vinculando commits feitos localmente ao seu usuário.
 ```
+
+---
+
+# Ignorando arquivos no Git
+
+Como fazer o Git ignorar certos arquivos para que eles não sejam monitorados ou enviados para o GitHub.
+
+### Arquivo .gitignore
+
+- Arquivo especial para configurar quais arquivos o Git deve ignorar;
+- Ao listar um arquivo ou pasta aqui, o Git passa a **ignorá-lo**;
+- **Útil para não enviar arquivos confidenciais** como senhas para o GitHub;
+
+### Criando o .gitignore
+
+- Basta criar um arquivo de texto chamado `.gitignore` na raiz do projeto;
+- **Dentro dele, listar os nomes dos arquivos/pastas a serem ignorados, um por linha**;
+
+### Ignorando arquivos específicos
+
+- Para ignorar um arquivo específico, colocar apenas seu nome (ex: `meupassword.txt`);
+
+### Ignorando tipos de arquivo
+
+- Para ignorar todos arquivos de um tipo, usar asterisco como curinga (ex: `*.gen`);
+
+### Ignorando pastas
+
+- Também é possível ignorar pastas inteiras (ex: `.config/temporário/`);
+
+---
+
+### .gitignore públicos
+
+- Existem repositórios públicos com .gitignore pré-configurados por linguagem;
+- Úteis para pegar uma base de arquivos a ignorar;
+
+---
+
+## Conclusão
+
+- O **.gitignore** é muito útil para não enviar arquivos confidenciais para o GitHub;
+- Basta listar os arquivos/pastas a serem ignorados neste arquivo;
